@@ -82,12 +82,12 @@
 	<script>
 	$(document).ready(function() {
 		//mouseover + focus
-		$('img').on('mouseover focus', function(e) {
+		$('img').on('mouseover focus', function() {
 			$('#image').css('background-image', 'url("' + this.src + '")');
 			$('#image').text(this.alt);
 		})
 		//mouseleave + blur
-		$('img').on('mouseleave blur', function(e) {
+		$('img').on('mouseleave blur', function() {
 			$('#image').css('background-image', 'none');
 			$('#image').text('Hover over an image below.');
 		})
